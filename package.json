@@ -5,6 +5,8 @@
   "scripts": {
     "dist": "./scripts/dist",
     "start": "npm run compile-watch",
+    "serve": "live-server ./documentation",
+    "compile-docs": "./scripts/docs",
     "compile": "faucet",
     "compile-watch": "npm run compile -- --watch",
     "release": "release-it"
@@ -35,6 +37,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "innoq-styleguide": "^0.5.72"
+    "innoq-styleguide": "^0.5.72",
+    "live-server": "^1.2.0"
   }
 }

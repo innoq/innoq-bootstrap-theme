@@ -2,3 +2,18 @@
 set -ex
 
 # TODO: Generate Bootstrap docs and serve locally
+cd bootstrap
+
+npm install
+
+bundle install
+
+npm run docs-compile
+
+mkdir ../documentation
+
+cp -R _gh_pages/* ../documentation
+
+cd ..
+
+cp dist/css/innoq-bootstrap-theme.css documentation/dist/css/bootstrap.css

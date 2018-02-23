@@ -5,6 +5,10 @@ const config = {
     {
       source: './node_modules/bootstrap/dist/js',
       target: './dist/js'
+    },
+    {
+      source: './dist/css/innoq-bootstrap-theme.css',
+      target: './documentation/dist/css/bootstrap.css'
     }
   ],
   sass: [
