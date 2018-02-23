@@ -1,6 +1,5 @@
 # ⚠️ WORK IN PROGRESS! DO NOT USE THIS THEME YET! ⚠️
 
-![Work in progress](https://media.giphy.com/media/l41lQ2V6TmvfDJYBO/giphy.gif)
 
 ## Usage
 
