@@ -10,7 +10,7 @@ bundle install
 
 npm run docs-compile
 
-mkdir ../documentation
+mkdir -p ../documentation
 
 cp -R _gh_pages/* ../documentation
 
