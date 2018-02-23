@@ -1,6 +1,6 @@
-# DISCLAIMER: WORK IN PROGRESS! DO NOT USE THIS THEME IN PRODUCTION YET!
+# ⚠️ WORK IN PROGRESS! DO NOT USE THIS THEME YET! ⚠️
 
-# INNOQ branded Bootstrap 4 theme for internal use
+![Work in progress](https://media.giphy.com/media/l41lQ2V6TmvfDJYBO/giphy.gif)
 
 ## Usage
 
