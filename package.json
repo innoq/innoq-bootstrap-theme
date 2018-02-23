@@ -1,0 +1,40 @@
+{
+  "name": "innoq-bootstrap-theme",
+  "version": "0.0.1",
+  "description": "INNOQ branded Bootstrap 4 theme for internal use",
+  "scripts": {
+    "dist": "./scripts/dist",
+    "start": "npm run compile-watch",
+    "compile": "faucet",
+    "compile-watch": "npm run compile -- --watch",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/innoq/innoq-bootstrap-theme.git"
+  },
+  "keywords": [
+    "INNOQ",
+    "Bootstrap",
+    "Theme"
+  ],
+  "author": "roman.stranghoener@innoq.com",
+  "license": "Copyright 2018 INNOQ Deutschland GmbH",
+  "bugs": {
+    "url": "https://github.com/innoq/innoq-bootstrap-theme/issues"
+  },
+  "homepage": "https://github.com/innoq/innoq-bootstrap-theme#readme",
+  "style": "dist/css/innoq-bootstrap-theme.css",
+  "sass": "src/stylesheets/index.scss",
+  "main": "dist/js/bootstrap",
+  "devDependencies": {
+    "faucet-pipeline": "^1.0.0-beta.0",
+    "faucet-pipeline-sass": "^1.0.0-beta.0",
+    "faucet-pipeline-static": "^1.0.0-beta.0",
+    "release-it": "^6.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "innoq-styleguide": "^0.5.72"
+  }
+}

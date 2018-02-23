@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -ex
+
+# TODO: Generate Bootstrap docs and serve locally

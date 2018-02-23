@@ -1,0 +1,29 @@
+language: node_js
+cache: yarn
+node_js:
+- '9'
+script:
+- yarn dist
+deploy:
+- provider: npm
+  skip_cleanup: true
+  email: roman.stranghoener@innoq.com
+  api_key:
+    secure:
+  on:
+    tags: true
+    repo: innoq/innoq-bootstrap-theme
+- provider: releases
+  skip_cleanup: true
+  api_key:
+    secure:
+  file: innoq-bootstrap-theme-$TRAVIS_TAG.zip
+  on:
+    tags: true
+notifications:
+  email: false
+  slack:
+    rooms:
+      - secure:
+    on_success: change
+    on_failure: always

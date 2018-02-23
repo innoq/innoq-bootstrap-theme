@@ -1,0 +1,5 @@
+.release-it.json
+.travis.yml
+*.zip
+faucet.config.js
+yarn.lock
