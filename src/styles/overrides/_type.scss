@@ -3,9 +3,11 @@
 //
 
 p {
-  line-height: $base-line-height;
-  font-family: $font-family-serif;
-  font-size: $companion-font-size;
+  &:not(.lead) {
+    line-height: $base-line-height;
+    font-family: $font-family-serif;
+    font-size: $companion-font-size;
+  }
 }
 
 

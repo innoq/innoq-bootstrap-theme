@@ -1,0 +1,12 @@
+//
+// Forms
+//
+
+// Form controls
+.form-control {
+  caret-color: $brand-interaction;
+
+  &:focus {
+    box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
+  }
+}

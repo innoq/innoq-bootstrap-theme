@@ -1,0 +1,11 @@
+//
+// Modals
+//
+
+.modal-body {
+  p {
+    &:not(.lead) {
+      @extend %heading-font-regular;
+    }
+  }
+}

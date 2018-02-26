@@ -1,0 +1,14 @@
+//
+// List Groups
+//
+
+.list-group,
+.list-group-item {
+  p {
+    &:not(.lead) {
+      @extend %heading-font-regular;
+      line-height: $heading-line-height;
+      font-size: $base-font-size;
+    }
+  }
+}
