@@ -4,11 +4,12 @@
   "description": "INNOQ branded Bootstrap 4 theme for internal use",
   "scripts": {
     "dist": "./scripts/dist",
-    "start": "npm run compile-watch",
-    "serve": "live-server ./documentation",
+    "start": "npm-run-all --parallel server-watch compile-watch",
+    "server-watch": "live-server ./documentation",
     "compile-docs": "./scripts/docs",
     "compile": "faucet",
     "compile-watch": "npm run compile -- --watch",
+    "test": "sass-lint -v -q",
     "release": "release-it"
   },
   "repository": {
@@ -33,11 +34,13 @@
     "faucet-pipeline": "^1.0.0-beta.0",
     "faucet-pipeline-sass": "^1.0.0-beta.0",
     "faucet-pipeline-static": "^1.0.0-beta.0",
-    "release-it": "^6.2.0"
+    "release-it": "^6.2.0",
+    "live-server": "^1.2.0",
+    "npm-run-all": "^4.1.2",
+    "sass-lint": "^1.12.1"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "innoq-styleguide": "^0.5.72",
-    "live-server": "^1.2.0"
+    "innoq-styleguide": "^0.5.72"
   }
 }
