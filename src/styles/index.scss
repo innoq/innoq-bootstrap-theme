@@ -1,3 +1,36 @@
-@import "bootstrap/scss/bootstrap-reboot";
-@import "bootstrap/scss/bootstrap";
-@import "bootstrap/scss/bootstrap-grid";
+//
+// INNOQ Styleguide
+//
+
+@import 'innoq-styleguide/dist/sass/settings/breakpoints';
+@import 'innoq-styleguide/dist/sass/settings/colors';
+@import 'innoq-styleguide/dist/sass/settings/theme-matthew';
+@import 'innoq-styleguide/dist/sass/settings/icons';
+@import 'innoq-styleguide/dist/sass/settings/typography';
+@import 'innoq-styleguide/dist/sass/settings/spacings';
+@import 'innoq-styleguide/dist/sass/tools/fonts';
+@import 'innoq-styleguide/dist/sass/generic/fontfaces';
+
+
+//
+// Custom Bootstrap variables
+//
+
+@import 'variables';
+
+
+//
+// Bootstrap 4.0
+//
+
+@import 'bootstrap/scss/bootstrap-reboot';
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap/scss/bootstrap-grid';
+
+
+//
+// Bootstrap Overrides
+//
+
+@import 'overrides/buttons';
+@import 'overrides/type';

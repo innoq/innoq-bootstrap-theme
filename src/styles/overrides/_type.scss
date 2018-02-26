@@ -1,0 +1,24 @@
+//
+// Paragraphs
+//
+
+p {
+  line-height: $base-line-height;
+  font-family: $font-family-serif;
+  font-size: $companion-font-size;
+}
+
+
+//
+// Headlines
+//
+
+h1,
+.h1,
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  color: $h1-color;
+  font-family: $font-family-sans-serif-heavy;
+}
