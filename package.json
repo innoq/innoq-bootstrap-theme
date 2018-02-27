@@ -22,14 +22,13 @@
     "Theme"
   ],
   "author": "roman.stranghoener@innoq.com",
-  "license": "Copyright 2018 innoQ Deutschland GmbH",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/innoq/innoq-bootstrap-theme/issues"
   },
   "homepage": "https://github.com/innoq/innoq-bootstrap-theme#readme",
   "style": "dist/css/innoq-bootstrap-theme.css",
   "sass": "src/stylesheets/index.scss",
-  "main": "dist/js/bootstrap",
   "devDependencies": {
     "faucet-pipeline": "^1.0.0-beta.0",
     "faucet-pipeline-sass": "^1.0.0-beta.0",
