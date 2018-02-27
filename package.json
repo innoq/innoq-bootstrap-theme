@@ -31,7 +31,6 @@
   "sass": "src/stylesheets/index.scss",
   "main": "dist/js/bootstrap",
   "devDependencies": {
-    "bootstrap": "4.0.0",
     "faucet-pipeline": "^1.0.0-beta.0",
     "faucet-pipeline-sass": "^1.0.0-beta.0",
     "faucet-pipeline-static": "^1.0.0-beta.0",
@@ -42,5 +41,6 @@
     "sass-lint": "^1.12.1"
   },
   "dependencies": {
+    "bootstrap": "4.0.0"
   }
 }
