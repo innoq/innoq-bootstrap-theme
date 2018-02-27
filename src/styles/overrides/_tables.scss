@@ -1,0 +1,19 @@
+//
+// Tables
+//
+
+.table {
+  border-bottom: 3px solid $brand-blue;
+
+  caption {
+    text-align: center;
+    color: $brand-text;
+  }
+
+  thead {
+    th {
+      @extend %heading-font-heavy;
+      border-bottom: 0;
+    }
+  }
+}

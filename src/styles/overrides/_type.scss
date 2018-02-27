@@ -1,7 +1,9 @@
 //
-// Paragraphs
+// Type Elements
 //
 
+
+// Paragraphs
 p {
   &:not(.lead) {
     line-height: $base-line-height;
@@ -11,9 +13,21 @@ p {
 }
 
 
-//
 // Headlines
-//
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h6,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  font-family: $font-family-sans-serif-heavy;
+}
 
 h1,
 .h1,
@@ -22,5 +36,26 @@ h1,
 .display-3,
 .display-4 {
   color: $h1-color;
-  font-family: $font-family-sans-serif-heavy;
+}
+
+
+// Code
+code {
+  background-color: $code-background-color;
+  padding: 2px $spacer-xxs;
+  line-height: $code-line-height;
+  font-size: $code-font-size;
+}
+
+// Lists
+ul {
+  &:not([class]) {
+    li {
+      list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><circle fill="#ff4d67" cx="5" cy="4" r="4"/></svg>');
+    }
+  }
+}
+
+dt {
+  font-family: $font-family-sans-serif-bold;
 }
