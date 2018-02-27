@@ -18,7 +18,7 @@ deploy:
   skip_cleanup: true
   email: roman.stranghoener@innoq.com
   api_key:
-    secure:
+    secure: mcy4y8KS6ZDIWYLVgBentn5wv9HJ+YU6ChWruKaTKnmW9P2cmgRGSyh040vAPIZlUrgcmm0VgR2p4pvwqrFEGA4wEyIZnWWt47dtP+kGhjBW0VnwO7xhbp2V7PHMk33dhQF3a+BgH/g63HZ1nZDMAi6D8ijPRAU9jqTHpHtWo9S5YvePQ5ndUOECZ6NqgyuR7oqPFxhGVxHtZtna3S4moVHiegiwhEpZMzALARG9sS3gZMTXZ3EFySbI5XQ78ckjmliMtKTqmFzvvDc9qFyTaQOrROnz6N2qp6wjk0QXFqay5Pah/U+wqpl8HC0GyXCfdZ/VwkJWb+coWk9dk6wIVZGGKXpoU3cDxE+2/Hm4iR64PZHAH0TuwMvr1qUop7LViJMIrW4ovw5XkaMaQy4Vzlqiend4/yZaD0ItYqPf8y9yey39V9/RtR0e29p51DZZJUm8f+vM4hJm+GOki/1h2nHDZ5LsU+QnEGFTmQ0Eog6OnqNAuMCRKy5DJrNXTDk45+JwgNYyOSm3lfpe+nDdw38dExLW7YpTlxenRyAvZCLbX6LO9jlABV2k0FNNDtBpGVOgXpvyJU0ub0sXHDjLPd8/wJGzrhumn+AjbYgGr9wCvQ378XxSiHQRwuMUK2IJi0x/H9E4d7svRjt1sqnRSRjbS5p7+X+1jzEF+T5EqmI=
   on:
     tags: true
     repo: innoq/innoq-bootstrap-theme
