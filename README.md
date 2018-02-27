@@ -1,5 +1,6 @@
 # ⚠️ WORK IN PROGRESS! DO NOT USE THIS THEME YET! ⚠️
 
+![Build Status](https://travis-ci.org/innoq/innoq-bootstrap-theme.svg?branch=master)
 
 ## Usage
 

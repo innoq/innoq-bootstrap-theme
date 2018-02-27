@@ -3,27 +3,8 @@ cache: yarn
 node_js:
 - '9'
 script:
-- yarn dist
-deploy:
-- provider: npm
-  skip_cleanup: true
-  email: roman.stranghoener@innoq.com
-  api_key:
-    secure:
-  on:
-    tags: true
-    repo: innoq/innoq-bootstrap-theme
-- provider: releases
-  skip_cleanup: true
-  api_key:
-    secure:
-  file: innoq-bootstrap-theme-$TRAVIS_TAG.zip
-  on:
-    tags: true
+- yarn test
 notifications:
   email: false
   slack:
-    rooms:
-      - secure:
-    on_success: change
-    on_failure: always
+    secure: UPhosE0ytoAKBy9FTY41sERHuU+Zy14404TUhS6eT4Og4+/ECW3TNliBfX1xiXl41l5+wypjWDfHkPMZIiZjRfuWGe/eIdX8zEZKXLiO5Ji9idcJsD1Y3nesH1846UrbdywZ/I6k8z3xHuZfr4kAyhSnmQ1TjPqBUVwU2fCkT+c+USmRx1c7QZ2yCoKXLHaVYjZQ4vvJqrR2f/mNa72oC+Zmuvfq1uADjl7nsVaHaT1V9bClhfh3tFIb+MpzLPhFjftwJHOhUNbwQNzZD5Odi0KZVeoKS6NQXOkumGODvA9j9zWljiNnQyh+pGPH7vOBn9KO5x2ZnOAjWu1W+2b+SoXTT0rBm2XCy4aHL/a12fUTfLUWUDqg19aeCPs86i5Hhv/RLqKLfXeV4QdXVRC/g04U9XI4bwpv/lMv0sQM0GrzOzM1cKGKL5zDFK3EtfkjBpcMO7/S22QjLYCswNiSJ/SoabKHURt3/j8ZnmXEhczUi6mJl0w/pMxOyhSGHQwCf2xpz/U//GSZvUGIeh9CJ/vQfNmvE/ZOJTe3BpWeZHAllnByS4C9e5Tz+plef1eXuY3qolUyDrZ7WfWMVMA/9m81XQ2DBJPx5bOTexvYnFVr5tPDyBZ9otw8sUdyxn0wCQf+/6XMuB0myY+42UA3zfeByLn5LXNJtSaaL35PP88=

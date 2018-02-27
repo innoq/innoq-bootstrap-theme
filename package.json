@@ -22,7 +22,7 @@
     "Theme"
   ],
   "author": "roman.stranghoener@innoq.com",
-  "license": "Copyright 2018 INNOQ Deutschland GmbH",
+  "license": "Copyright 2018 innoQ Deutschland GmbH",
   "bugs": {
     "url": "https://github.com/innoq/innoq-bootstrap-theme/issues"
   },
@@ -40,7 +40,7 @@
     "sass-lint": "^1.12.1"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "4.0.0",
     "innoq-styleguide": "^0.5.72"
   }
 }
