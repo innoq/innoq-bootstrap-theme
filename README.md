@@ -17,18 +17,21 @@ If you like to use this theme in your own Sass code and installed this theme
 with NPM you can import the source files to your manifest (e.g. `index.scss`)
 as well.
 
-    @import "innoq-bootstrap-theme/src/styles/index.scss";
+```scss
+@import "innoq-bootstrap-theme/src/styles/index.scss";
+```
 
 **Please note:** This theme styles _all_ default Bootstrap components compliant
-to the new INNOQ corporate design. If you need documentation or help with
-Bootstrap or its components in general, please head over to
+to the new [INNOQ corporate design](https://innoq.github.io/innoq-styleguide).
+If you need documentation or help with Bootstrap or its components in general, 
+please head over to
 
 <https://getbootstrap.com>
 
 ## Development
 
 Contribution is always welcome. Please use pull requests, if you want to
-incorperate changes or new components. For development purposes of this theme,
+incorporate changes or new components. For development purposes of this theme,
 we use the official Bootstrap documentation pages and apply the styles of this
 theme to it. Therefore this repository uses a submodule to link the official
 Bootstrap repository and a build script to generate and serve the documentation
@@ -43,9 +46,9 @@ pages locally.
 * Go into the project folder `cd innoq-bootstrap-theme`
 * Init the Bootstrap submodule `git submodule update --init` (only needed the
   very first time)
-* Install Bootstap's documentation pages `yarn run install-docs`
-* Compile styles and serve documentation `yarn start`
+* Install Bootstap's documentation pages `npm run install-docs`
+* Compile styles and serve documentation `npm start`
 
 Now you should see the Bootstrap documentation pages with INNOQ styling applied.
-`yarn start` incorporates a watcher, so you can write code and see your
+`npm start` incorporates a watcher, so you can write code and see your
 changes immediately in the browser.
