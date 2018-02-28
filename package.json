@@ -1,6 +1,6 @@
 {
   "name": "innoq-bootstrap-theme",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "INNOQ branded Bootstrap 4 theme for internal use",
   "scripts": {
     "dist": "mkdir -p dist/ && yarn run compile",
