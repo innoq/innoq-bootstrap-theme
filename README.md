@@ -13,8 +13,9 @@ your designated asset folder or use NPM to install this theme as a dependency.
 
     npm install innoq-bootstrap-theme --save
 
-If you installed this theme with NPM you can import the source files to
-your Sass manifest (e.g. `index.scss`) as well.
+If you like to use this theme in your own Sass code and installed this theme
+with NPM you can import the source files to your manifest (e.g. `index.scss`)
+as well.
 
     @import "innoq-bootstrap-theme/src/styles/index.scss";
 
