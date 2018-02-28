@@ -3,3 +3,7 @@
 *.zip
 faucet.config.js
 yarn.lock
+.editorconfig
+.gitmodules
+.sass-lint.yml
+scripts/
