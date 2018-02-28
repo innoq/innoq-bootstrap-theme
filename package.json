@@ -3,11 +3,11 @@
   "version": "0.0.2",
   "description": "INNOQ branded Bootstrap 4 theme for internal use",
   "scripts": {
-    "dist": "yarn run compile",
+    "dist": "mkdir -p dist/ && yarn run compile",
     "start": "npm-run-all --parallel server-watch compile-watch",
     "server-watch": "live-server ./documentation",
     "compile": "faucet",
-    "compile-watch": "yarn run compile -- --watch",
+    "compile-watch": "yarn run compile -- --watch --config=faucet.config.dev.js",
     "install-docs": "./scripts/docs",
     "test": "sass-lint -v -q",
     "release": "release-it"
