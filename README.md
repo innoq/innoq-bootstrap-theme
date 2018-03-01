@@ -1,6 +1,7 @@
 # INNOQ Bootstrap 4 Theme
 
 [![Build Status](https://travis-ci.org/innoq/innoq-bootstrap-theme.svg?branch=master)](https://travis-ci.org/innoq/innoq-bootstrap-theme)
+[![npm version](https://badge.fury.io/js/innoq-bootstrap-theme.svg)](https://www.npmjs.com/package/innoq-bootstrap-theme)
 
 ## Usage
 
