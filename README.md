@@ -4,7 +4,7 @@
 
 ## Usage
 
-This theme is a complete replacement for Bootstrap. You do not need to include
+This theme is a complete replacement for Bootstrap 4. You do not need to include
 both, `bootstrap.css` and `innoq-bootstrap-theme.css`. The latter is sufficient.
 
 To use the compiled theme in your webapp, you can either copy the contents of a
@@ -23,10 +23,16 @@ as well.
 
 **Please note:** This theme styles _all_ default Bootstrap components compliant
 to the new [INNOQ corporate design](https://innoq.github.io/innoq-styleguide).
-If you need documentation or help with Bootstrap or its components in general, 
+If you need documentation or help with Bootstrap or its components in general,
 please head over to
 
 <https://getbootstrap.com>
+
+**Important:** If you are currently using Bootstrap 3 you should be aware that
+version 4 brings some *breaking changes*. Do not update to the new theme without
+updating your webapp's views as well. If you need help with that check out this
+[official migration guide](https://getbootstrap.com/docs/4.0/migration/).
+
 
 ## Development
 
