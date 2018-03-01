@@ -1,4 +1,4 @@
-# ⚠️ WORK IN PROGRESS! DO NOT USE THIS THEME YET! ⚠️
+# INNOQ Bootstrap 4 Theme
 
 [![Build Status](https://travis-ci.org/innoq/innoq-bootstrap-theme.svg?branch=master)](https://travis-ci.org/innoq/innoq-bootstrap-theme)
 
