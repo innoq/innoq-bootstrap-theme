@@ -64,11 +64,11 @@ $green:   $brand-green;
 $primary:       $brand-primary;
 $secondary:     $brand-blue;
 $success:       $brand-green;
-$info:          $brand-blue-25;
+$info:          $brand-blue-50;
 $warning:       $brand-yellow;
 $danger:        $brand-danger;
 
-// $light:         $gray-100 !default;
+$light:         $gray-300;
 // $dark:          $gray-800 !default;
 //
 // $theme-colors: () !default;
@@ -276,7 +276,7 @@ $headings-line-height:        $heading-line-height;
 //
 // $small-font-size:             80% !default;
 //
-// $text-muted:                  $gray-600 !default;
+$text-muted:                     $gray-500;
 //
 // $blockquote-small-color:      $gray-600 !default;
 // $blockquote-font-size:        ($font-size-base * 1.25) !default;
@@ -332,9 +332,9 @@ $table-dark-border-color:     $brand-blue-75;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 //
-// $input-btn-padding-y:         .375rem !default;
-// $input-btn-padding-x:         .75rem !default;
-// $input-btn-line-height:       $line-height-base !default;
+$input-btn-padding-y:            .5rem;
+$input-btn-padding-x:            1rem;
+$input-btn-line-height:          1.5;
 
 $input-btn-focus-width:          2px;
 $input-btn-focus-color:          rgba($component-active-bg, .25) !default;
@@ -405,7 +405,7 @@ $input-btn-focus-box-shadow:     none;
 // $input-line-height-lg:                  $input-btn-line-height-lg !default;
 //
 // $input-bg:                              $white !default;
-$input-disabled-bg:                     $gray-300 !default;
+$input-disabled-bg:                     $gray-300;
 $input-color:                           $gray-900;
 $input-border-color:                    $gray-900;
 // $input-border-width:                    $input-btn-border-width !default;
@@ -805,12 +805,12 @@ $modal-content-border-width:     0;
 // $alert-padding-x:                   1.25rem !default;
 // $alert-margin-bottom:               1rem !default;
 // $alert-border-radius:               $border-radius !default;
-// $alert-link-font-weight:            $font-weight-bold !default;
-// $alert-border-width:                $border-width !default;
+$alert-link-font-weight:               900;
+$alert-border-width:                   0;
 //
-// $alert-bg-level:                    -10 !default;
+$alert-bg-level:                       -5;
 // $alert-border-level:                -9 !default;
-// $alert-color-level:                 6 !default;
+$alert-color-level:                    9;
 //
 //
 // Progress bars
