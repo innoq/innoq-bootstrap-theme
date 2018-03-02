@@ -1,6 +1,6 @@
 {
   "name": "innoq-bootstrap-theme",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "INNOQ branded Bootstrap 4 theme for internal use",
   "scripts": {
     "dist": "./scripts/dist",
