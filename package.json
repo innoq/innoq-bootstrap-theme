@@ -3,7 +3,7 @@
   "version": "0.0.5",
   "description": "INNOQ branded Bootstrap 4 theme for internal use",
   "scripts": {
-    "dist": "mkdir -p dist/ && yarn run compile",
+    "dist": "./scripts/dist",
     "start": "npm-run-all --parallel server-watch compile-watch",
     "server-watch": "live-server ./documentation",
     "compile": "faucet",

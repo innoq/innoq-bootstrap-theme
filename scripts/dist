@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -ex
+
+mkdir -p dist/
+yarn run compile
+zip -r innoq-bootstrap-theme-$TRAVIS_TAG.zip .

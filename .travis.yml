@@ -22,3 +22,10 @@ deploy:
   on:
     tags: true
     repo: innoq/innoq-bootstrap-theme
+- provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: dtaFkK5i25fEJlwqJWUrbvYOmI0xI/1cWy3T/Msnq5kdoaQQ3N6oS29/wSDDhsjyMBnLlvoeQg3OsDZWkbWnVWU2aNmm3DDC3f36JWUipYLdYfSsdWHryAbJoI/u6GIdvvEFMay1/KSNtczWeS4843CF/qyPKK8EIy9++/+Aj68769VuXA/ukz1zs4bxzFjxyCm2PvokxCzyTTL4GGPkRGcdENFRo1/Cp+D6kxqkftGFvItjEZ1DdDKIc962NbD5kO9SBmSw5uTlLFLCEc7A0cyIVsNSbsmyR6E8bGWdoIVRxJDIdBzU6IrKBG6Ym/yVh4uj7EgCn+CrUxj2EkC6E95nEknDOFVRXjfbguGNl6yxEqfil1MQxXmm8bqxaoTUeOVyVBlidrPILy/5jaobedpV7SXmmUj7LhWO+z3ec4h20C00Gg0K5xvaOe81wTVu2acyiBK+ea1C2XTO4Xdzfjuewx+hPXTiw0ORQ5ESCZuBBU8imtsVx3ocnc1iibWjPJVFHBs7cnAy+RNkTw6EeuInjDOngUJt5O3OTGWh48861qlzuZP5vkUfxpGqAOIDzzshkRmN3WmC/rI2XTSiVW2IljiAwQJkPj9iAb7Jun6CkGD4oIi34/xRa/fBeHaHQxJyE49aLHWanO7mXPqwE30DoW1mKhq7UsCFUND7HJM=
+  file: innoq-bootstrap-theme-$TRAVIS_TAG.zip
+  on:
+    tags: true
