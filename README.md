@@ -23,7 +23,7 @@ as well.
 ```
 
 **Please note:** This theme styles _all_ default Bootstrap components compliant
-to the new [INNOQ corporate design](https://innoq.github.io/innoq-styleguide).
+to the new [INNOQ corporate design](https://innoq.style).
 If you need documentation or help with Bootstrap or its components in general,
 please head over to
 
