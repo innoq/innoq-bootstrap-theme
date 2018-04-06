@@ -29,3 +29,16 @@ deploy:
   file: innoq-bootstrap-theme-$TRAVIS_TAG.zip
   on:
     tags: true
+- provider: s3
+  access_key_id: AKIAJV7A3MFW2KU3HOQQ
+  secret_access_key:
+    secure: ZKx4KFdz98a/sdq7JLEXqjisnnEQbV0K3XU8y+fkZb0ivDaJpU9zHuWBr//MzK9zGN22pPDEn+VMsf7bNGyruSjGmk6/GtH4LUrnkwNC6g7BmvVl1RxTmUko8o5sbGC/0iRIUpQUhc5NVqahuDpqbM1s1Hh/pKm3Vd2KlK8lIji4emhSN7a/o+d82BJ+P+mPKwb0oePBW2F8ypqMtIQIlaItcEUgU7zFcxm7VQAvye3AcmYA7CSJ80TItzvbYrQMrRnoDcnCE8+wvwY1elmtR+sR1a3a0xJC8q3dGEA083poE0Ri+4XvbChSYgdwl5a3MSc0IQxtzEvFFNCnaXsYj2nMdxLETXU4UfpffvsOIthS+tBBOs3K0HfchPBfDTVjVJdbTPJtl/iy6JZKDcimiQz1E4CgnCTBje9y+0C4byQ1PjbUmVn6pk3TgC/4b7XatIft70heOs27l4pDwVNYj3B/MU7OBjbjLk7Yf5JbmqmXq1EqovYCYavELoj+TjwF5EAQuMqO7H9yQ/eaQHJVS7OgN6rU1KWxK6NiYM5OMMvc9UAsjD5Zs+XEEPhUfjQjhMlSv9ZjaUqKhy1r1vOjPIIcxZFLMEdnpo341XzELIDLkNRINTkWCIF7FXTdM256teANkVw4FDObtK45CzrisaDHJ+7SkzVh6wSuhyYyICo=
+  bucket: bootstrap.assets.innoq.com
+  skip_cleanup: true
+  acl: public_read
+  cache_control: max-age=60
+  default_text_charset: utf-8
+  region: eu-central-1
+  local_dir: dist
+  on:
+    tags: true

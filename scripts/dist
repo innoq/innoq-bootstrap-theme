@@ -4,4 +4,9 @@ set -ex
 mkdir -p dist/
 yarn run compile
 
-zip -r innoq-bootstrap-theme-$TRAVIS_TAG.zip src/ dist/ package.json README.md LICENSE
+if [ "$TRAVIS_TAG" != "" ]; then
+  mkdir -p dist/css/$TRAVIS_TAG
+  cp dist/css/innoq-bootstrap-theme.css dist/css/$TRAVIS_TAG/innoq-bootstrap-theme.css
+
+  zip -r innoq-bootstrap-theme-$TRAVIS_TAG.zip src/ dist/ package.json README.md LICENSE
+fi
