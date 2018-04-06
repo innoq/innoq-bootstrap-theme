@@ -36,7 +36,7 @@ deploy:
   bucket: bootstrap.assets.innoq.com
   skip_cleanup: true
   acl: public_read
-  cache_control: max-age=60
+  cache_control: max-age=31536000 # 1 year
   default_text_charset: utf-8
   region: eu-central-1
   local_dir: dist
