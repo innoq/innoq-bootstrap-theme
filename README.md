@@ -8,9 +8,13 @@
 This theme is a complete replacement for Bootstrap 4. You do not need to include
 both, `bootstrap.css` and `innoq-bootstrap-theme.css`. The latter is sufficient.
 
-To use the compiled theme in your webapp, you can either copy the contents of a
-certain [release](https://github.com/innoq/innoq-bootstrap-theme/releases) to
-your designated asset folder or use NPM to install this theme as a dependency.
+To use the compiled theme in your webapp, you can either link to our CDN 
+
+  https://bootstrap.assets.innoq.com/css/X.X.X/innoq-bootstrap-theme.css
+
+(replace x.x.x by your desired version) or copy the contents of a certain 
+[release](https://github.com/innoq/innoq-bootstrap-theme/releases) to your 
+designated asset folder or use NPM to install this theme as a dependency.
 
     npm install innoq-bootstrap-theme --save
 
