@@ -39,7 +39,7 @@
     "sass-lint": "^1.12.1"
   },
   "dependencies": {
-    "bootstrap": "4.0.0",
+    "bootstrap": "4.3.1",
     "innoq-styleguide": "^0.5.72"
   }
 }
