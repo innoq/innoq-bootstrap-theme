@@ -1,6 +1,5 @@
 {
   "pkgFiles": ["package.json"],
-  "increment": "patch",
   "changelogCommand": "git log --pretty=format:\"* %s (%h)\" [REV_RANGE]",
   "requireCleanWorkingDir": false,
   "src": {
@@ -12,10 +11,10 @@
     "push": true
   },
   "npm": {
-    "publish": false
+    "publish": true
   },
   "github": {
-    "release": false
+    "release": true
   },
   "prompt": {
     "src": {
@@ -23,8 +22,8 @@
       "commit": true,
       "tag": true,
       "push": true,
-      "release": false,
-      "publish": false
+      "release": true,
+      "publish": true
     }
   }
 }

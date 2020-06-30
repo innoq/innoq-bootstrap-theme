@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -ex
 
+node_modules/.bin/faucet
+
 # TODO: Generate Bootstrap docs and serve locally
 cd bootstrap
 
@@ -8,7 +10,7 @@ npm install
 
 bundle install
 
-npm run docs-compile
+npm run docs
 
 mkdir -p ../documentation
 
@@ -16,4 +18,4 @@ cp -R _gh_pages/* ../documentation
 
 cd ..
 
-cp dist/css/innoq-bootstrap-theme.css documentation/dist/css/bootstrap.css
+cp dist/css/innoq-bootstrap-theme.css documentation/docs/4.5/dist/css/bootstrap.css
