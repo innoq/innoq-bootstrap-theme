@@ -5,8 +5,19 @@ npm install
 
 node_modules/.bin/faucet
 
-VERSION=$(npm view innoq-bootstrap-theme version)
+VERSION=$(cat package.json \
+  | grep version \
+  | head -1 \
+  | awk -F: '{ print $2 }' \
+  | sed 's/[",]//g' \
+  | tr -d '[[:space:]]')
+
+echo $VERSION
+
+FILENAME=innoq-bootstrap-theme-$VERSION.zip
+
+echo $FILENAME
 
 mkdir -p dist/css/$VERSION
-cp dist/css/innoq-bootstrap-theme.css dist/css/$VERSION/innoq-bootstrap-theme.css
-zip -r innoq-bootstrap-theme-$VERSION.zip src/ dist/ package.json README.md LICENSE
+mv dist/css/innoq-bootstrap-theme.css dist/css/$VERSION/innoq-bootstrap-theme.css
+zip -r $FILENAME src/ dist/ package.json README.md LICENSE
