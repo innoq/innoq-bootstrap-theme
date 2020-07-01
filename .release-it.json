@@ -14,7 +14,8 @@
     "publish": true
   },
   "github": {
-    "release": true
+    "release": true,
+    "assets": ["innoq-bootstrap-theme-${version}.zip"]
   },
   "prompt": {
     "src": {
@@ -25,5 +26,9 @@
       "release": true,
       "publish": true
     }
+  },
+  "hooks": {
+    "before:init": "npm install",
+    "after:bump": "npm run dist"
   }
 }

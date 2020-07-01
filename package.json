@@ -10,7 +10,8 @@
     "compile-watch": "faucet --watch",
     "install-docs": "./scripts/docs",
     "test": "sass-lint -v -q",
-    "release": "release-it"
+    "release": "release-it",
+    "release-dry": "release-it --dry-run --verbose"
   },
   "repository": {
     "type": "git",
