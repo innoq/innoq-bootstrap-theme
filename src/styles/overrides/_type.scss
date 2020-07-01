@@ -5,6 +5,7 @@
 
 // Paragraphs
 p {
+  &:not(.info),
   &:not(.lead) {
     line-height: $base-line-height;
     font-family: $font-family-serif;
