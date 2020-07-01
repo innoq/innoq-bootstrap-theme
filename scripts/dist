@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 set -ex
 
+npm install
+
 node_modules/.bin/faucet
 
-if [ "$TRAVIS_TAG" != "" ]; then
-  mkdir -p dist/css/$TRAVIS_TAG
-  cp dist/css/innoq-bootstrap-theme.css dist/css/$TRAVIS_TAG/innoq-bootstrap-theme.css
+VERSION=$(npm view innoq-bootstrap-theme version)
 
-  zip -r innoq-bootstrap-theme-$TRAVIS_TAG.zip src/ dist/ package.json README.md LICENSE
-fi
+mkdir -p dist/css/$VERSION
+cp dist/css/innoq-bootstrap-theme.css dist/css/$VERSION/innoq-bootstrap-theme.css
+zip -r innoq-bootstrap-theme-$VERSION.zip src/ dist/ package.json README.md LICENSE
