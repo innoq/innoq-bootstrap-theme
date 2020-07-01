@@ -15,7 +15,7 @@
   },
   "github": {
     "release": true,
-    "assets": ["innoq-bootstrap-theme-${version}.zip"]
+    "assets": ["*.zip"]
   },
   "prompt": {
     "src": {
