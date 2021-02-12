@@ -38,4 +38,4 @@ jobs:
 
     - name: Copy files from dist to INNOQ asset bucket
       run: |
-        aws s3 sync ./dist ${{ secrets.AWS_BUCKET_NAME }}
+        aws s3 sync ./dist ${{ secrets.AWS_BUCKET_NAME }} --acl public-read
