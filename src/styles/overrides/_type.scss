@@ -7,9 +7,21 @@
 p {
   &:not(.info),
   &:not(.lead) {
-    line-height: $base-line-height;
+    line-height: $line-height-base;
     font-family: $font-family-serif;
     font-size: $companion-font-size;
+  }
+}
+
+// Links
+a {
+  color: $link-color;
+  
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    background-color: $link-hover-color-light;
   }
 }
 
@@ -44,8 +56,8 @@ h1,
 code {
   background-color: $code-background-color;
   padding: 2px $spacer-xxs;
-  line-height: $code-line-height;
-  font-size: $code-font-size;
+  line-height: $paragraph-line-height;
+  font-size: $font-size-xs;
 }
 
 // Lists

@@ -32,12 +32,12 @@ $black:    #000;
 //   "900": $gray-900
 // ), $grays);
 //
-$blue:    $brand-blue;
-$indigo:  $brand-blue-25;
+$blue:    $brand-petrol;
+$indigo:  $brand-petrol-25;
 // $purple:  #6f42c1 !default;
 // $pink:    #e83e8c !default;
 $red:     $brand-red;
-// $orange:  #fd7e14 !default;
+$orange:  $brand-apricot;
 $yellow:  $brand-yellow;
 $green:   $brand-green;
 // $teal:    #20c997 !default;
@@ -61,10 +61,10 @@ $green:   $brand-green;
 // ), $colors);
 //
 
-$primary:       $brand-primary;
-$secondary:     $brand-blue;
+$primary:       $brand-petrol;
+$secondary:     $brand-apricot;
 $success:       $brand-green;
-$info:          $brand-blue-50;
+$info:          $brand-petrol-50;
 $warning:       $brand-yellow;
 $danger:        $brand-danger;
 
@@ -151,9 +151,9 @@ $body-color:                $brand-text;
 //
 // Style anchor elements.
 //
-$link-color:                $brand-interaction;
-// $link-decoration:           none !default;
-// $link-hover-color:          darken($link-color, 15%) !default;
+$link-color:                $brand-petrol;
+$link-decoration:           underline;
+$link-hover-color:          $brand-petrol;
 // $link-hover-decoration:     underline !default;
 //
 // Paragraphs
@@ -236,7 +236,7 @@ $component-active-bg:         $brand-blue;
 // $font-family-base:            $font-family-serif;
 // stylelint-enable value-keyword-case
 //
-$font-size-base:              $base-font-size;
+$font-size-base:              $font-size-base;
 // $font-size-lg:                ($font-size-base * 1.25) !default;
 // $font-size-sm:                ($font-size-base * .875) !default;
 //
@@ -245,7 +245,7 @@ $font-size-base:              $base-font-size;
 // $font-weight-bold:            700 !default;
 //
 // $font-weight-base:            $font-weight-normal !default;
-$line-height-base:            $base-line-height;
+$line-height-base:            $paragraph-line-height;
 //
 // $h1-font-size:                $font-size-base * 2.5 !default;
 // $h2-font-size:                $font-size-base * 2 !default;
@@ -862,7 +862,7 @@ $alert-color-level:                    9;
 //
 // Figures
 //
-$figure-caption-font-size:          $figcaption-font-size-small;
+$figure-caption-font-size:          $font-size-sm;
 $figure-caption-color:              $brand-text;
 //
 //
