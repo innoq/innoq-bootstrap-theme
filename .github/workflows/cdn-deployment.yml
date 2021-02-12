@@ -1,13 +1,14 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Deploy to INNOQ CDN
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  release:
-    types: # This configuration does not affect the page_build event above
-      - created
+  push:
+    branches: [master]
+    tags:
+      - *
+  pull_request:
+    branches: [master]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -28,14 +29,13 @@ jobs:
         npm install
         npm run dist
     
-    # - name: Configure AWS credentials from INNOQ account
-      # uses: aws-actions/configure-aws-credentials@v1
-      # with:
-        # aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        # aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        # aws-region: eu-central-1
+    - name: Configure AWS credentials from INNOQ account
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: eu-central-1
 
-    # - name: Copy files from dist to INNOQ asset bucket
-      # run: |
-        # aws s3 sync ./dist ${{ secrets.AWS_BUCKET_NAME }}
-    
+    - name: Copy files from dist to INNOQ asset bucket
+      run: |
+        aws s3 sync ./dist ${{ secrets.AWS_BUCKET_NAME }}
