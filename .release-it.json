@@ -6,7 +6,7 @@
     "commit": true,
     "commitMessage": "v%s",
     "tag": true,
-    "tagName": "%s",
+    "tagName": "v%s",
     "tagAnnotation": "v%s",
     "push": true
   },
