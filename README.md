@@ -57,7 +57,7 @@ pages locally.
 * Go into the project folder `cd innoq-bootstrap-theme`
 * Init the Bootstrap submodule `git submodule update --init` (only needed the
   very first time)
-* Install Bootstap's documentation pages `npm run install-docs`
+* Install Bootstap's documentation pages `npm run docs:install`
 * Compile styles and serve documentation `npm start`
 
 Now you should see the Bootstrap documentation pages with INNOQ styling applied.

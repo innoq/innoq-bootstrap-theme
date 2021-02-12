@@ -8,9 +8,11 @@ cd bootstrap
 
 npm install
 
-bundle install
+npm run dist
 
-npm run docs
+export HUGO_ENV="development" # turn off file integrity checks, before building the documentation
+
+npm run docs-build
 
 mkdir -p ../documentation
 
@@ -18,4 +20,4 @@ cp -R _gh_pages/* ../documentation
 
 cd ..
 
-cp dist/css/innoq-bootstrap-theme.css documentation/docs/4.5/dist/css/bootstrap.css
+cp dist/css/innoq-bootstrap-theme.css documentation/docs/4.6/dist/css/bootstrap.css
