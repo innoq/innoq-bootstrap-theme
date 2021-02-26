@@ -7,7 +7,7 @@
     "start": "npm-run-all --parallel server:watch compile:watch",
     "server:watch": "live-server ./documentation",
     "compile": "faucet",
-    "compile:watch": "faucet --watch",
+    "compile:watch": "faucet --watch --config='faucet.config.dev.js'",
     "docs:install": "./scripts/docs",
     "test": "sass-lint -v -q",
     "release": "release-it",
