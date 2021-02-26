@@ -7,6 +7,6 @@
   caret-color: $brand-interaction;
 
   &:focus {
-    box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
+    box-shadow:  0 0 0 $input-btn-focus-width rgba($primary, .5);
   }
 }
