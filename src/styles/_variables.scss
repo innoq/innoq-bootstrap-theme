@@ -237,8 +237,8 @@ $component-active-bg:         $brand-blue;
 // stylelint-enable value-keyword-case
 //
 $font-size-base:              $font-size-base;
-// $font-size-lg:                ($font-size-base * 1.25) !default;
-// $font-size-sm:                ($font-size-base * .875) !default;
+$font-size-lg:                ($font-size-base * 1.25);
+$font-size-sm:                ($font-size-base * .875);
 //
 // $font-weight-light:           300 !default;
 // $font-weight-normal:          400 !default;
