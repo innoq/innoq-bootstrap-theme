@@ -4,11 +4,11 @@ name: Deploy to INNOQ CDN
 # events but only for the master branch
 on:
   push:
-    branches: [master]
+    branches: [main]
     tags:
       - v*  # Our tags are prefixed with 'v'
   pull_request:
-    branches: [master]
+    branches: [main]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -18,17 +18,17 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-      
+
     - name: Setup Node
       uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-    
+
     - name: Install Dependencies
       run: |
         npm install
         npm run dist
-    
+
     - name: Configure AWS credentials from INNOQ account
       uses: aws-actions/configure-aws-credentials@v1
       with:
