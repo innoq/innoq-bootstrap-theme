@@ -42,7 +42,7 @@
     "faucet-pipeline-js": "^2.1.7",
     "faucet-pipeline-sass": "^1.4.0",
     "faucet-pipeline-static": "^1.2.0",
-    "innoq-styleguide": "^5.7.0"
+    "innoq-styleguide": "^7.5.0"
   },
   "hugo-bin": {
     "buildTags": "extended"
