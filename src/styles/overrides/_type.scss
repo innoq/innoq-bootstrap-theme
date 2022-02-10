@@ -63,6 +63,7 @@ ul {
   &:not([class]) {
     li {
       font-size: $companion-font-size;
+      // sass-lint:disable quotes
       list-style-image: url("data:image/svg+xml;utf8,%3c?xml version='1.0' encoding='utf-8'?%3e%3csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 10 10'%3e%3ccircle fill='%23ff9c66' cx='5' cy='4' r='4'/%3e%3c/svg%3e");
     }
   }

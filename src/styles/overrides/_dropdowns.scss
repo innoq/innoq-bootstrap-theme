@@ -2,27 +2,26 @@
 // Dropdowns
 //
 
+// sass-lint:disable force-pseudo-nesting force-element-nesting
 .dropdown-menu {
   box-shadow: $dropdown-box-shadow;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active,
 .btn-secondary:not(:disabled):not(.disabled).active,
-.show > .btn-secondary.dropdown-toggle
-  {
-    color: $brand-white;
-    background-color: $brand-secondary;
-    border-color: $brand-secondary;
-  }
+.show > .btn-secondary.dropdown-toggle {
+  border-color: $brand-secondary;
+  background-color: $brand-secondary;
+  color: $brand-white;
+}
 
 .btn-secondary:not(:disabled):not(.disabled):active,
 .btn-secondary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle
-  {
-    color: $brand-secondary;
-    background-color: $brand-primary;
-    border-color: $brand-primary;
-  }
+.show > .btn-primary.dropdown-toggle {
+  border-color: $brand-primary;
+  background-color: $brand-primary;
+  color: $brand-secondary;
+}
 
 .dropdown-item.active {
   background-color: $brand-secondary;
