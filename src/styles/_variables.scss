@@ -242,8 +242,9 @@ $font-size-sm:                ($font-size-base * .875);
 //
 // $font-weight-light:           300 !default;
 // $font-weight-normal:          400 !default;
-// $font-weight-bold:            700 !default;
-//
+$font-weight-bold:            bold !default;
+$font-weight-heavy:           800 !default;
+
 // $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            $paragraph-line-height;
 //
@@ -255,8 +256,8 @@ $line-height-base:            $paragraph-line-height;
 // $h6-font-size:                $font-size-base !default;
 //
 $headings-margin-bottom:      $spacer;
-$headings-font-family:        $font-family-sans-serif-bold;
-$headings-font-weight:        normal;
+$headings-font-family:        $font-family-sans-serif;
+$headings-font-weight:        $font-weight-heavy;
 $headings-line-height:        $heading-line-height;
 // $headings-color:              inherit !default;
 //
@@ -364,12 +365,12 @@ $input-btn-focus-box-shadow:     none;
 // $btn-line-height-sm:          $input-btn-line-height-sm !default;
 //
 // $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
-// $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
+// $btn-padding-x-lg:            $input-btn-padding-x-lg !default;ƒ
 // $btn-line-height-lg:          $input-btn-line-height-lg !default;
 //
 // $btn-border-width:            $input-btn-border-width !default;
 //
-// $btn-font-weight:             $font-weight-normal !default;
+$btn-font-weight:             $font-weight-bold !default;
 // $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
 // $btn-focus-width:             $input-btn-focus-width !default;
 // $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;

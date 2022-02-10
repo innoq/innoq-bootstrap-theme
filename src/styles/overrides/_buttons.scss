@@ -1,11 +1,26 @@
 //
 // Buttons
 //
-
-.btn {
-  font-family: $font-family-sans-serif-bold;
-}
-
 .btn-success {
   color: $brand-white;
+}
+
+.btn-primary {
+  &:hover,
+  &:active,
+  &:focus {
+    color: $brand-secondary;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+  }
+}
+
+.btn-secondary {
+  &:hover,
+  &:active,
+  &:focus {
+    color: $brand-white;
+    background-color: $brand-secondary;
+    border-color: $brand-secondary;
+  }
 }

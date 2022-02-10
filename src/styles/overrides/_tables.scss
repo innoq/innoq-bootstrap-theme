@@ -13,7 +13,9 @@
   thead {
     th {
       @extend %heading-font-heavy;
+
       border-bottom: 0;
+      color: $brand-secondary;
     }
   }
 }

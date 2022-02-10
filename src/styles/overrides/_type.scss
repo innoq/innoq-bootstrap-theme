@@ -7,8 +7,9 @@
 p {
   &:not(.info),
   &:not(.lead) {
+    @extend %body-font-regular;
+
     line-height: $line-height-base;
-    font-family: $font-family-serif;
     font-size: $companion-font-size;
   }
 }
@@ -27,7 +28,6 @@ a {
   }
 }
 
-
 // Headlines
 h1,
 .h1,
@@ -35,24 +35,18 @@ h2,
 .h2,
 h3,
 .h3,
+h4,
+.h4,
+h5,
+.h5,
 h6,
 .h6,
 .display-1,
 .display-2,
 .display-3,
 .display-4 {
-  font-family: $font-family-sans-serif-heavy;
-}
-
-h1,
-.h1,
-.display-1,
-.display-2,
-.display-3,
-.display-4 {
   color: $h1-color;
 }
-
 
 // Code
 code {
@@ -64,13 +58,18 @@ code {
 
 // Lists
 ul {
+  @extend %body-font-regular;
+
   &:not([class]) {
     li {
-      list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><circle fill="#ff9c66" cx="5" cy="4" r="4"/></svg>');
+      font-size: $companion-font-size;
+      list-style-image: url("data:image/svg+xml;utf8,%3c?xml version='1.0' encoding='utf-8'?%3e%3csvg xmlns='http://www.w3.org/2000/svg' width='9' height='9' viewBox='0 0 10 10'%3e%3ccircle fill='%23ff9c66' cx='5' cy='4' r='4'/%3e%3c/svg%3e");
     }
   }
 }
 
 dt {
-  font-family: $font-family-sans-serif-bold;
+  @extend %heading-font-bold;
+
+  color: $brand-secondary;
 }

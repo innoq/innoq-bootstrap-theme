@@ -5,3 +5,25 @@
 .dropdown-menu {
   box-shadow: $dropdown-box-shadow;
 }
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle
+  {
+    color: $brand-white;
+    background-color: $brand-secondary;
+    border-color: $brand-secondary;
+  }
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle
+  {
+    color: $brand-secondary;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+  }
+
+.dropdown-item.active {
+  background-color: $brand-secondary;
+}

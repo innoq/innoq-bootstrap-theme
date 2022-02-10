@@ -1,12 +1,12 @@
 //
 // List Groups
 //
-
 .list-group,
 .list-group-item {
   p {
     &:not(.lead) {
       @extend %heading-font-regular;
+
       line-height: $line-height-base;
       font-size: $font-size-base;
     }

@@ -48,6 +48,6 @@
     "buildTags": "extended"
   },
   "engines": {
-    "node": ">=10.0.0 <15.0.0"
+    "node": ">=12.0.0"
   }
 }
