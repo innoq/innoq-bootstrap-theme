@@ -16,8 +16,8 @@ npm run docs-build
 
 mkdir -p ../documentation
 
-cp -R _gh_pages/* ../documentation
+cp -R _site/* ../documentation
 
 cd ..
 
-cp dist/css/innoq-bootstrap-theme.css documentation/docs/4.6/dist/css/bootstrap.css
+cp dist/css/innoq-bootstrap-theme.css documentation/docs/5.1/dist/css/bootstrap.css
