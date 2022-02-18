@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 set -ex
 
-node_modules/.bin/faucet
+npm install && npm run compile
 
-# TODO: Generate Bootstrap docs and serve locally
 cd bootstrap
 
 npm install
@@ -14,10 +13,8 @@ export HUGO_ENV="development" # turn off file integrity checks, before building 
 
 npm run docs-build
 
-mkdir -p ../documentation
+cp ../dist/css/innoq-bootstrap-theme.css _site/docs/5.1/dist/css/bootstrap.css
 
-cp -R _gh_pages/* ../documentation
+cd _site
 
-cd ..
-
-cp dist/css/innoq-bootstrap-theme.css documentation/docs/4.6/dist/css/bootstrap.css
+live-server .

@@ -1,4 +1,23 @@
 ::selection {
-  background-color: $link-hover-color-light;
   color: $brand-text;
+  background-color: $link-hover-color-light;
+}
+
+.bd-toc > nav li {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-sm;
+}
+
+.bd-toc {
+  ul {
+    @include list-unstyled();
+
+    li {
+      list-style-image: none;
+    }
+  }
+
+  a:hover {
+    background-color: transparent;
+  }
 }

@@ -1,8 +1,8 @@
 //
-// List Groups
+// Cards
 //
-.list-group,
-.list-group-item {
+
+.card .card-text {
   @extend %heading-font-regular;
   font-size: $font-size-base;
   line-height: $line-height-base;

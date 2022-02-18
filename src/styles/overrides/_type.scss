@@ -9,8 +9,8 @@ p {
   &:not(.lead) {
     @extend %body-font-regular;
 
-    line-height: $line-height-base;
     font-size: $companion-font-size;
+    line-height: $line-height-base;
   }
 }
 
@@ -22,8 +22,8 @@ a {
     &:hover,
     &:active,
     &:focus {
-      outline: none;
       background-color: $link-hover-color-light;
+      outline: none;
     }
   }
 }
@@ -50,17 +50,17 @@ h6,
 
 // Code
 code {
-  background-color: $code-background-color;
   padding: 2px $spacer-xxs;
-  line-height: $paragraph-line-height;
   font-size: $font-size-xs;
+  line-height: $paragraph-line-height;
+  background-color: $code-background-color;
 }
 
 // Lists
 ul {
-  @extend %body-font-regular;
-
   &:not([class]) {
+    @extend %body-font-regular;
+
     li {
       font-size: $companion-font-size;
       // sass-lint:disable quotes

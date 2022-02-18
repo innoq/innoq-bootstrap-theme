@@ -10,17 +10,17 @@
 .btn-secondary:not(:disabled):not(.disabled):active,
 .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
-  border-color: $brand-secondary;
-  background-color: $brand-secondary;
   color: $brand-white;
+  background-color: $brand-secondary;
+  border-color: $brand-secondary;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active,
 .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-  border-color: $brand-primary;
-  background-color: $brand-primary;
   color: $brand-secondary;
+  background-color: $brand-primary;
+  border-color: $brand-primary;
 }
 
 .dropdown-item.active {

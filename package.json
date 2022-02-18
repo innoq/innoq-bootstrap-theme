@@ -1,15 +1,20 @@
 {
   "name": "innoq-bootstrap-theme",
-  "version": "1.0.1",
-  "description": "INNOQ branded Bootstrap 4 theme for internal use",
+  "version": "2.0.0",
+  "description": "INNOQ branded Bootstrap 5 theme for internal use",
   "scripts": {
-    "dist": "./scripts/dist",
-    "start": "npm-run-all --parallel server:watch compile:watch",
+    "dist": "npm-run-all --parallel compile copy:scss",
+    "start": "npm-run-all --parallel watch:compile watch:dist watch:docs",
     "server:watch": "live-server ./documentation",
-    "compile": "faucet",
-    "compile:watch": "faucet --watch --config='faucet.config.dev.js'",
-    "docs:install": "./scripts/docs",
-    "test": "sass-lint -v -q",
+    "compile": "sass -q --load-path=node_modules src/styles/innoq-bootstrap-theme.scss dist/css/innoq-bootstrap-theme.css",
+    "test": "npm run lint",
+    "prepare": "husky install",
+    "copy:css": "cp dist/css/innoq-bootstrap-theme.css bootstrap/_site/docs/5.1/dist/css/bootstrap.css",
+    "copy:scss": "mkdir -p scss && cp -r src/styles/* scss/",
+    "watch:compile": "sass -w -q --load-path=node_modules src/styles:dist/css",
+    "watch:dist": "onchange 'dist/css/*.css' -- npm run copy:css",
+    "watch:docs": "./scripts/docs",
+    "lint": "stylelint 'src/**/*.scss'",
     "release": "release-it",
     "release-dry": "release-it --dry-run --verbose"
   },
@@ -29,20 +34,30 @@
   },
   "homepage": "https://github.com/innoq/innoq-bootstrap-theme#readme",
   "style": "dist/css/innoq-bootstrap-theme.css",
-  "sass": "src/styles/index.scss",
+  "sass": {
+    "loadPath": [
+      ".",
+      "./src",
+      "./node_modules"
+    ]
+  },
   "devDependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "hugo-bin": "^0.77.2",
+    "husky": "^7.0.4",
     "live-server": "^1.2.1",
     "npm-run-all": "^4.1.5",
-    "release-it": "^14.4.1",
-    "sass-lint": "^1.13.1"
+    "onchange": "^7.1.0",
+    "sass": "^1.49.8",
+    "semantic-release": "^18.0.0",
+    "stylelint": "^14.2.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-twbs-bootstrap": "^3.0.1"
   },
   "dependencies": {
-    "bootstrap": "^4.6.0",
-    "faucet-pipeline-core": "^1.5.0",
-    "faucet-pipeline-js": "^2.1.7",
-    "faucet-pipeline-sass": "^1.4.0",
-    "faucet-pipeline-static": "^1.2.0",
-    "innoq-styleguide": "^7.5.1"
+    "bootstrap": "^5.1.3",
+    "innoq-styleguide": "^7.5.4"
   },
   "hugo-bin": {
     "buildTags": "extended"

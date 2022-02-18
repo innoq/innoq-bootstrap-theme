@@ -6,16 +6,16 @@
   border-bottom: 3px solid $brand-petrol;
 
   caption {
-    text-align: center;
     color: $brand-text;
+    text-align: center;
   }
 
   thead {
     th {
       @extend %heading-font-heavy;
 
-      border-bottom: 0;
       color: $brand-secondary;
+      border-bottom: 0;
     }
   }
 }
