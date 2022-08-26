@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
-    "innoq-styleguide": "^7.5.4"
+    "innoq-styleguide": "^8.0.0"
   },
   "hugo-bin": {
     "buildTags": "extended"
