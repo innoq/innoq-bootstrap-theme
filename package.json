@@ -1,6 +1,6 @@
 {
   "name": "innoq-bootstrap-theme",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "INNOQ branded Bootstrap 5 theme for internal use",
   "scripts": {
     "dist": "npm-run-all --parallel compile copy:scss",
