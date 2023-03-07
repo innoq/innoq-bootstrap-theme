@@ -6,7 +6,7 @@
     "dist": "npm-run-all --parallel compile copy:scss",
     "start": "npm-run-all --parallel watch:compile watch:dist watch:docs",
     "server:watch": "live-server ./documentation",
-    "compile": "sass -q --load-path=node_modules src/styles/innoq-bootstrap-theme.scss dist/css/innoq-bootstrap-theme.css",
+    "compile": "sass -q --load-path=node_modules src/styles/innoq-bootstrap-theme.scss dist/css/innoq-bootstrap-theme.css && mkdir -p dist/css/$npm_package_version && cp dist/css/innoq-bootstrap-theme.css dist/css/$npm_package_version/innoq-bootstrap-theme.css",
     "test": "npm run lint",
     "prepare": "husky install",
     "copy:css": "cp dist/css/innoq-bootstrap-theme.css bootstrap/_site/docs/5.1/dist/css/bootstrap.css",
