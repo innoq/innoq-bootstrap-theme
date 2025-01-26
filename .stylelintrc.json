@@ -1,3 +1,5 @@
 {
-  "extends": ["stylelint-config-twbs-bootstrap", "stylelint-config-prettier"]
+  "extends": [
+    "stylelint-config-twbs-bootstrap"
+  ]
 }
