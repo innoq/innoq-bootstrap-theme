@@ -9,7 +9,7 @@
     "compile": "sass -q --load-path=node_modules src/styles/innoq-bootstrap-theme.scss dist/css/innoq-bootstrap-theme.css",
     "test": "npm run lint",
     "prepare": "husky install",
-    "copy:css": "cp dist/css/innoq-bootstrap-theme.css bootstrap/_site/docs/5.1/dist/css/bootstrap.css",
+    "copy:css": "cp dist/css/innoq-bootstrap-theme.css bootstrap/_site/docs/5.3/dist/css/bootstrap.css",
     "copy:scss": "mkdir -p scss && cp -r src/styles/* scss/",
     "watch:compile": "sass -w -q --load-path=node_modules src/styles:dist/css",
     "watch:dist": "onchange 'dist/css/*.css' -- npm run copy:css",
