@@ -42,22 +42,23 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.1",
-    "@commitlint/config-conventional": "^16.0.0",
-    "hugo-bin": "^0.77.2",
-    "husky": "^7.0.4",
-    "live-server": "^1.2.1",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "browserslist": "^4.24.4",
+    "hugo-bin": "^0.139.0",
+    "husky": "^9.1.7",
+    "live-server": "^1.2.2",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
-    "sass": "^1.49.8",
-    "semantic-release": "^18.0.0",
-    "stylelint": "^14.2.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-twbs-bootstrap": "^3.0.1"
+    "sass": "^1.83.4",
+    "semantic-release": "^24.2.1",
+    "stylelint": "^16.14.0",
+    "stylelint-config-twbs-bootstrap": "^15.1.0"
   },
   "dependencies": {
-    "bootstrap": "^5.1.3",
-    "innoq-styleguide": "^8.0.0"
+    "bootstrap": "^5.3.3",
+    "innoq-styleguide": "^15.5.4",
+    "modularscale-sass": "^3.0.10"
   },
   "hugo-bin": {
     "buildTags": "extended"
