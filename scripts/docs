@@ -17,4 +17,4 @@ cp ../dist/css/innoq-bootstrap-theme.css _site/docs/5.3/dist/css/bootstrap.css
 
 cd _site
 
-live-server .
+npx serve .

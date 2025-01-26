@@ -5,7 +5,7 @@
   "scripts": {
     "dist": "npm-run-all --parallel compile copy:scss",
     "start": "npm-run-all --parallel watch:compile watch:dist watch:docs",
-    "server:watch": "live-server ./documentation",
+    "server:watch": "serve ./documentation",
     "compile": "sass -q --load-path=node_modules src/styles/innoq-bootstrap-theme.scss dist/css/innoq-bootstrap-theme.css",
     "test": "npm run lint",
     "prepare": "husky install",
@@ -47,11 +47,11 @@
     "browserslist": "^4.24.4",
     "hugo-bin": "^0.139.0",
     "husky": "^9.1.7",
-    "live-server": "^1.2.2",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
     "sass": "^1.83.4",
     "semantic-release": "^24.2.1",
+    "serve": "^14.2.4",
     "stylelint": "^16.14.0",
     "stylelint-config-twbs-bootstrap": "^15.1.0"
   },
