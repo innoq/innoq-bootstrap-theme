@@ -5,11 +5,11 @@
   "scripts": {
     "dist": "npm-run-all --parallel compile copy:scss",
     "start": "npm-run-all --parallel watch:compile watch:dist watch:docs",
-    "server:watch": "live-server ./documentation",
+    "server:watch": "serve ./documentation",
     "compile": "sass -q --load-path=node_modules src/styles/innoq-bootstrap-theme.scss dist/css/innoq-bootstrap-theme.css",
     "test": "npm run lint",
     "prepare": "husky install",
-    "copy:css": "cp dist/css/innoq-bootstrap-theme.css bootstrap/_site/docs/5.1/dist/css/bootstrap.css",
+    "copy:css": "cp dist/css/innoq-bootstrap-theme.css bootstrap/_site/docs/5.3/dist/css/bootstrap.css",
     "copy:scss": "mkdir -p scss && cp -r src/styles/* scss/",
     "watch:compile": "sass -w -q --load-path=node_modules src/styles:dist/css",
     "watch:dist": "onchange 'dist/css/*.css' -- npm run copy:css",
@@ -42,22 +42,23 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.1",
-    "@commitlint/config-conventional": "^16.0.0",
-    "hugo-bin": "^0.77.2",
-    "husky": "^7.0.4",
-    "live-server": "^1.2.1",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "browserslist": "^4.24.4",
+    "hugo-bin": "^0.139.0",
+    "husky": "^9.1.7",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
-    "sass": "^1.49.8",
-    "semantic-release": "^18.0.0",
-    "stylelint": "^14.2.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-twbs-bootstrap": "^3.0.1"
+    "sass": "^1.83.4",
+    "semantic-release": "^24.2.1",
+    "serve": "^14.2.4",
+    "stylelint": "^16.14.0",
+    "stylelint-config-twbs-bootstrap": "^15.1.0"
   },
   "dependencies": {
-    "bootstrap": "^5.1.3",
-    "innoq-styleguide": "^8.0.0"
+    "bootstrap": "^5.3.3",
+    "innoq-styleguide": "^15.5.4",
+    "modularscale-sass": "^3.0.10"
   },
   "hugo-bin": {
     "buildTags": "extended"
