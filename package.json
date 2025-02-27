@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "description": "INNOQ branded Bootstrap 5 theme for internal use",
   "scripts": {
-    "dist": "npm-run-all --parallel compile copy:scss",
+    "dist": "./scripts/dist",
     "start": "npm-run-all --parallel watch:compile watch:dist watch:docs",
     "server:watch": "serve ./documentation",
     "compile": "sass -q --load-path=node_modules src/styles/innoq-bootstrap-theme.scss dist/css/innoq-bootstrap-theme.css",

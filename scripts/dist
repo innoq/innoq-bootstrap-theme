@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+set -ex
+
+npm install
+
+# Compile the scss files
+sass -q --load-path=node_modules src/styles/innoq-bootstrap-theme.scss dist/css/innoq-bootstrap-theme.css
+
+VERSION=$(cat package.json \
+  | grep version \
+  | head -1 \
+  | awk -F: '{ print $2 }' \
+  | sed 's/[",]//g' \
+  | tr -d '[[:space:]]')
+
+echo $VERSION
+
+FILENAME=innoq-bootstrap-theme-$VERSION.zip
+
+echo $FILENAME
+
+mkdir -p dist/css/$VERSION
+mv dist/css/innoq-bootstrap-theme.css dist/css/$VERSION/innoq-bootstrap-theme.css
+mv dist/css/innoq-bootstrap-theme.css.map dist/css/$VERSION/innoq-bootstrap-theme.css.map
+zip -r $FILENAME src/ dist/ package.json README.md LICENSE
